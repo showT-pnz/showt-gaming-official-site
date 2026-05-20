@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+	<head>
+		<title>showT GAMING — Official Site</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta name="description" content="showT GAMING — ゲームアプリの公式サイト。VIOLETなど、showTが手掛けるゲームタイトルのダウンロードと紹介。" />
+		<link rel="icon" type="image/png" href="images/logo.png" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="landing is-preload">
+
+		<!-- Device Selector Overlay -->
+		<div id="device-selector">
+			<div class="ds-inner">
+				<div class="ds-logo">
+					showT
+					<span class="ds-gaming">GAMING</span>
+				</div>
+				<div class="ds-sub">Select your experience</div>
+				<div class="ds-options">
+					<button class="ds-btn" onclick="selectDevice('desktop')">
+						<i class="fa-solid fa-display"></i>
+						<span class="ds-title">Desktop</span>
+						<span class="ds-sub2">Full layout</span>
+					</button>
+					<button class="ds-btn" onclick="selectDevice('mobile')">
+						<i class="fa-solid fa-mobile-screen-button"></i>
+						<span class="ds-title">Mobile</span>
+						<span class="ds-sub2">Optimized</span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Switch version button -->
+		<button class="ds-switch" onclick="resetDevice()">Switch version</button>
+
+		<!-- Page Wrapper -->
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header" class="alt">
+				<div class="header-left">
+					<h1>
+						<a href="index.html">
+							showT
+							<span class="gaming-tag">GAMING</span>
+						</a>
+					</h1>
+					<a href="https://showt-pnz.github.io/showt-official-site/" class="site-switch to-official" target="_blank">
+						<i class="fa-solid fa-gem"></i>
+						<span>Official</span>
+					</a>
+				</div>
+				<nav id="nav">
+					<ul>
+						<li class="special">
+							<a href="#menu" class="menuToggle"><span>Menu</span></a>
+							<div id="menu">
+								<button id="menu-close">&#215;</button>
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="#one">About</a></li>
+									<li><a href="violet.html">VIOLET</a></li>
+									<li><a href="https://ko-fi.com/showt" target="_blank">Support</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<h2>
+						showT
+						<span class="gaming-sub">GAMING</span>
+					</h2>
+					<p>次世代のゲーム体験を、あなたの手に。</p>
+					<ul class="actions special">
+						<li><a href="violet.html" class="button primary">Play VIOLET.</a></li>
+					</ul>
+				</div>
+				<a href="#one" class="more scrolly">Discovery</a>
+			</section>
+
+			<!-- About -->
+			<section id="one" class="wrapper style1 special">
+				<div class="inner">
+					<header class="major">
+						<h2>showT GAMING — プレイヤーのために作る</h2>
+						<p>私たちは「遊ぶ体験」そのものをアートとして追求します。<br />
+						妥協のないゲームデザインと、磨き抜かれたUI・世界観が、あなたの画面に新たな次元を開きます。</p>
+					</header>
+					<div class="pillars">
+						<div class="pillar">
+							<i class="fa-solid fa-bolt"></i>
+							<span class="pillar-label">Power</span>
+						</div>
+						<div class="pillar-divider"></div>
+						<div class="pillar">
+							<i class="fa-solid fa-gamepad"></i>
+							<span class="pillar-label">Play</span>
+						</div>
+						<div class="pillar-divider"></div>
+						<div class="pillar">
+							<i class="fa-solid fa-trophy"></i>
+							<span class="pillar-label">Glory</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- VIOLET Spotlight -->
+			<section id="two" class="wrapper alt style2">
+				<section class="spotlight violet-spotlight">
+					<div class="image"><img src="images/violet_screenshot.png" alt="VIOLET ゲームスクリーンショット" /></div>
+					<div class="content">
+						<h2>VIOLET<br />百人一首の戦場へ</h2>
+						<p>平安時代を舞台にしたローグライクカードゲーム。紫式部・清少納言・小野小町の三人から主人公を選び、歌牌を武器に生霊・妖怪・怨念と戦え。デッキを鍛え、奈落の深淵へ挑め。</p>
+						<ul class="actions">
+							<li><a href="violet.html" class="button violet-btn">Enter VIOLET</a></li>
+						</ul>
+					</div>
+				</section>
+			</section>
+
+			<!-- CTA -->
+			<section id="cta" class="wrapper style4">
+				<div class="inner">
+					<header>
+						<h2>showTの活動を支援する</h2>
+						<p>Ko-fiでの支援が、次なるタイトルの開発を加速させます。あなたのサポートが、新たなゲームの礎となります。</p>
+					</header>
+					<ul class="actions stacked">
+						<li><a href="https://ko-fi.com/showt" class="button fit primary" target="_blank">Ko-fiで支援</a></li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="social-footer">
+					<div class="social-buttons">
+						<a href="https://x.com/showT_official" class="social-btn" target="_blank" title="X (Twitter)">
+							<i class="fa-brands fa-x-twitter"></i>
+							<span>X</span>
+						</a>
+						<a href="https://www.instagram.com/showt_original/" class="social-btn" target="_blank" title="Instagram">
+							<i class="fa-brands fa-instagram"></i>
+							<span>Instagram</span>
+						</a>
+						<a href="mailto:yelan.gyoza@gmail.com" class="social-btn" title="Email">
+							<i class="fa-solid fa-envelope"></i>
+							<span>Email</span>
+						</a>
+					</div>
+					<a href="https://ko-fi.com/showt" class="kofi-btn" target="_blank">
+						<i class="fa-solid fa-mug-hot"></i>
+						Support on Ko-fi
+					</a>
+				</div>
+				<ul class="copyright" style="justify-content:center;">
+					<li>&copy; showT GAMING</li>
+				</ul>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script>
+			function selectDevice(mode) {
+				localStorage.setItem('showt-gaming-device', mode);
+				document.body.classList.remove('mode-desktop', 'mode-mobile');
+				document.body.classList.add('mode-' + mode);
+				document.getElementById('device-selector').classList.add('hidden');
+			}
+			function resetDevice() {
+				localStorage.removeItem('showt-gaming-device');
+				document.getElementById('device-selector').classList.remove('hidden');
+			}
+			(function() {
+				var saved = localStorage.getItem('showt-gaming-device');
+				if (saved) {
+					document.body.classList.add('mode-' + saved);
+					document.getElementById('device-selector').classList.add('hidden');
+				}
+			})();
+
+			(function($) {
+				$(function() {
+					var $window = $(window),
+						$body = $('body');
+					$body.addClass('is-preload');
+					$window.on('load', function() {
+						window.setTimeout(function() {
+							$body.removeClass('is-preload');
+						}, 100);
+					});
+					$('.menuToggle').on('click', function(event) {
+						event.preventDefault();
+						$('#menu').toggleClass('visible');
+					});
+					$('#menu-close').on('click', function() {
+						$('#menu').removeClass('visible');
+					});
+					$('#menu').on('click', 'a', function() {
+						$('#menu').removeClass('visible');
+					});
+				});
+			})(jQuery);
+		</script>
+
+	</body>
+</html>

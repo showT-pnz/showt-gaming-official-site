@@ -1,0 +1,4 @@
+/* Noscript fallback */
+body { background: #05050a; color: #c0d8ff; font-family: sans-serif; }
+#device-selector, .ds-switch { display: none !important; }
+#banner { padding: 10em 2em 6em; text-align: center; }

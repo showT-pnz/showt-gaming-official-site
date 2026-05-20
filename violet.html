@@ -1,0 +1,409 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+	<head>
+		<title>VIOLET — showT GAMING</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta name="description" content="VIOLET — 平安時代を舞台にしたローグライクカードゲーム。showT GAMINGのAndroidゲームアプリ。" />
+		<link rel="icon" type="image/png" href="images/logo.png" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#header {
+				background: rgba(12, 3, 20, 0.97);
+				border-bottom: 1px solid rgba(153, 0, 255, 0.3);
+				box-shadow: 0 2px 30px rgba(153, 0, 255, 0.08);
+			}
+			#header h1 a { color: #cc44ff; text-shadow: 0 0 15px rgba(153,0,255,0.5); }
+			#header h1 a span.gaming-tag { color: rgba(204, 68, 255, 0.7); }
+			.header-back { color: #cc44ff; }
+			.header-back:hover { color: #e099ff; }
+			.menuToggle { color: #cc44ff !important; text-shadow: 0 0 8px rgba(153,0,255,0.4); }
+
+			#main > header {
+				padding-top: 9em;
+				background: linear-gradient(180deg, #08020f, #0c0310, #05050a);
+				border-bottom: 1px solid rgba(153,0,255,0.3);
+			}
+			#main > header::after {
+				background: linear-gradient(90deg, transparent, #cc44ff, transparent);
+			}
+			#main > header h2 {
+				color: #cc44ff;
+				text-shadow: 0 0 15px rgba(153,0,255,0.6), 0 0 30px rgba(153,0,255,0.3), 0 2px 4px rgba(0,0,0,0.9);
+				animation: violet-pulse 3s ease-in-out infinite;
+			}
+			@keyframes violet-pulse {
+				0%, 100% { text-shadow: 0 0 10px #cc44ff, 0 0 25px rgba(153,0,255,0.5), 0 0 50px rgba(153,0,255,0.2); }
+				50% { text-shadow: 0 0 15px #cc44ff, 0 0 35px rgba(153,0,255,0.7), 0 0 70px rgba(153,0,255,0.3); }
+			}
+			#main > header p { color: rgba(204,68,255,0.5); }
+
+			.wrapper.style5 {
+				background: radial-gradient(ellipse at top, rgba(100,0,180,0.06) 0%, transparent 60%), var(--bg2);
+			}
+			.wrapper.style5 h1, .wrapper.style5 h2, .wrapper.style5 h3, .wrapper.style5 h4 {
+				color: #cc44ff;
+				text-shadow: 0 0 10px rgba(153,0,255,0.4);
+			}
+			.wrapper.style5 ul li::before { color: #cc44ff; }
+			hr::after { background: linear-gradient(90deg, transparent, #cc44ff, transparent); }
+
+			.app-screenshots img {
+				box-shadow: 0 8px 32px rgba(0,0,0,0.8), 0 0 20px rgba(153,0,255,0.15);
+				border-color: rgba(153,0,255,0.3);
+			}
+			.app-screenshots img:hover {
+				box-shadow: 0 12px 40px rgba(0,0,0,0.9), 0 0 30px rgba(153,0,255,0.3);
+			}
+
+			#menu { border-left-color: rgba(153,0,255,0.25); }
+			#menu li { border-bottom-color: rgba(153,0,255,0.08); }
+			#menu a { color: #cc44ff; }
+			#menu-close { color: #cc44ff; }
+			#menu a:hover { color: #e099ff; text-shadow: 0 0 10px #cc44ff; }
+
+			.social-btn { border-color: rgba(153,0,255,0.25); color: #cc44ff; background: rgba(153,0,255,0.03); }
+			.social-btn:hover {
+				border-color: #cc44ff;
+				color: #e099ff;
+				box-shadow: 0 10px 28px rgba(153,0,255,0.15);
+				text-shadow: 0 0 8px #cc44ff;
+				background: rgba(153,0,255,0.07);
+			}
+			.kofi-btn { border-color: rgba(153,0,255,0.4); color: #cc44ff; }
+			.kofi-btn:hover {
+				background: rgba(153,0,255,0.1);
+				color: #e099ff;
+				border-color: #cc44ff;
+				box-shadow: 0 0 28px rgba(153,0,255,0.3);
+				text-shadow: 0 0 8px #cc44ff;
+			}
+			#footer { border-top-color: rgba(153,0,255,0.25); }
+
+			/* Genre tags */
+			.genre-tags {
+				display: flex;
+				gap: 0.6em;
+				flex-wrap: wrap;
+				margin: 1.2em 0 2em;
+			}
+			.genre-tag {
+				font-family: 'Orbitron', sans-serif;
+				font-size: 0.55em;
+				letter-spacing: 0.2em;
+				padding: 0.4em 0.9em;
+				border: 1px solid rgba(153,0,255,0.4);
+				color: rgba(204,68,255,0.8);
+				border-radius: 2px;
+				background: rgba(153,0,255,0.06);
+				text-transform: uppercase;
+			}
+
+			/* Character cards */
+			.char-grid {
+				display: flex;
+				gap: 1.5em;
+				flex-wrap: wrap;
+				margin: 1.5em 0 2em;
+			}
+			.char-card {
+				flex: 1 1 220px;
+				background: rgba(153,0,255,0.04);
+				border: 1px solid rgba(153,0,255,0.2);
+				padding: 1.5em;
+				border-radius: 4px;
+				transition: all 0.3s;
+				position: relative;
+				overflow: hidden;
+			}
+			.char-card::before {
+				content: '';
+				position: absolute;
+				top: 0; left: 0; right: 0;
+				height: 1px;
+				background: linear-gradient(90deg, transparent, #cc44ff, transparent);
+				opacity: 0.5;
+			}
+			.char-card:hover {
+				background: rgba(153,0,255,0.07);
+				border-color: rgba(153,0,255,0.4);
+				box-shadow: 0 0 20px rgba(153,0,255,0.1);
+				transform: translateY(-3px);
+			}
+			.char-card h5 {
+				font-family: 'Orbitron', sans-serif;
+				color: #cc44ff;
+				font-size: 0.8em;
+				letter-spacing: 0.2em;
+				margin: 0 0 0.5em;
+				text-shadow: 0 0 8px rgba(153,0,255,0.4);
+			}
+			.char-card p {
+				font-size: 0.9em;
+				color: rgba(192,216,255,0.6);
+				line-height: 1.6;
+				margin: 0;
+			}
+
+			/* Enemy cards */
+			.enemy-grid {
+				display: flex;
+				gap: 1.2em;
+				flex-wrap: wrap;
+				margin: 1.5em 0 1.5em;
+			}
+			.enemy-card {
+				flex: 1 1 180px;
+				background: rgba(80,0,0,0.06);
+				border: 1px solid rgba(153,0,255,0.15);
+				padding: 1.2em 1.4em;
+				border-radius: 4px;
+				transition: all 0.3s;
+			}
+			.enemy-card:hover {
+				background: rgba(100,0,50,0.1);
+				border-color: rgba(153,0,255,0.3);
+				transform: translateY(-2px);
+			}
+			.enemy-card h5 {
+				font-family: 'Orbitron', sans-serif;
+				color: rgba(200,140,255,0.85);
+				font-size: 0.72em;
+				letter-spacing: 0.15em;
+				margin: 0 0 0.5em;
+			}
+			.enemy-card h5 i { margin-right: 0.5em; opacity: 0.7; }
+			.enemy-card p {
+				font-size: 0.85em;
+				color: rgba(192,216,255,0.5);
+				line-height: 1.55;
+				margin: 0;
+			}
+			/* Coming soon tag */
+			.update-hint {
+				font-family: 'Orbitron', sans-serif;
+				font-size: 0.6em;
+				letter-spacing: 0.2em;
+				color: rgba(153,0,255,0.5);
+				border: 1px dashed rgba(153,0,255,0.25);
+				padding: 0.6em 1.2em;
+				display: inline-block;
+				margin-top: 0.8em;
+				border-radius: 2px;
+				text-transform: uppercase;
+			}
+			.char-card.char-coming {
+				background: rgba(153,0,255,0.02);
+				border-color: rgba(153,0,255,0.12);
+				border-style: dashed;
+			}
+			.char-card.char-coming h5 { color: rgba(153,0,255,0.45); }
+			.char-card.char-coming p { color: rgba(192,216,255,0.35); }
+
+			@media screen and (max-width: 736px) {
+				.char-grid { flex-direction: column; }
+				.enemy-grid { flex-direction: column; }
+				.genre-tags { justify-content: center; }
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+			<header id="header">
+				<div class="header-left">
+					<h1>
+						<a href="index.html" class="header-back">&#8592;</a>
+						<a href="index.html">
+							showT
+							<span class="gaming-tag">GAMING</span>
+						</a>
+					</h1>
+					<a href="https://showt-pnz.github.io/showt-official-site/" class="site-switch to-official" target="_blank">
+						<i class="fa-solid fa-gem"></i>
+						<span>Official</span>
+					</a>
+				</div>
+				<nav id="nav">
+					<ul>
+						<li class="special">
+							<a href="#menu" class="menuToggle"><span>Menu</span></a>
+							<div id="menu">
+								<button id="menu-close">&#215;</button>
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="violet.html">VIOLET</a></li>
+									<li><a href="https://ko-fi.com/showt" target="_blank">Support</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<article id="main">
+				<header>
+					<h2>VIOLET</h2>
+					<p>百人一首 ローグライクカードゲーム</p>
+				</header>
+
+				<section class="wrapper style5">
+					<div class="inner">
+
+						<div class="genre-tags">
+							<span class="genre-tag">Roguelike</span>
+							<span class="genre-tag">Card Game</span>
+							<span class="genre-tag">Android</span>
+							<span class="genre-tag">平安時代</span>
+						</div>
+
+						<h3>歌牌を武器に、奈落の底へ挑め。</h3>
+						<p>平安時代を舞台にしたローグライクカードゲーム。百人一首の歌人が選ばれし戦士として転生し、3層の奈落に蔓延る怨念・妖怪・古の霊と死闘を繰り広げる。デッキを磨き、レリックを集め、パッシブを吟味し——唯一無二のビルドで奈落の主を打ち倒せ。さらなるキャラクター・敵・ルートが今後のアップデートで随時解禁予定。</p>
+
+						<hr />
+
+						<h4>スクリーンショット</h4>
+						<div class="app-screenshots">
+							<img src="images/violet_screenshot.png" alt="VIOLET バトル画面" />
+							<img src="images/violet_screenshot2.png" alt="VIOLET マップ画面" />
+						</div>
+
+						<hr />
+
+						<h4>プレイアブルキャラクター</h4>
+						<div class="char-grid">
+							<div class="char-card">
+								<h5>紫式部</h5>
+								<p>炎と詩の力を操る魔道士型。源氏物語の一章を束ねた大技が炸裂する。序盤は手数で削り、後半は大魔法で制圧するスタイル。</p>
+							</div>
+							<div class="char-card">
+								<h5>清少納言</h5>
+								<p>枕草子の観察眼で弱点を暴く知略型。毒・デバフ・状態異常を巧みに重ね、ジワジワと削り倒す。先を読む者に有利なデッキ。</p>
+							</div>
+							<div class="char-card">
+								<h5>小野小町</h5>
+								<p>美と呪の二面性を持つ近接型。高火力コンボと自己回復が共存し、攻めながら粘れる。扱い方次第で最強にも最弱にもなる。</p>
+							</div>
+							<div class="char-card char-coming">
+								<h5>??? / 次期参戦</h5>
+								<p>新たな歌人が戦列に加わる予定。続報は公式SNSにて。</p>
+							</div>
+						</div>
+
+						<hr />
+
+						<h4>行く手を阻む怨念たち</h4>
+						<p>奈落の各層には独自の敵が巣くっている。特性・行動パターン・ギミックを見極め、デッキを最適化して突破せよ。今後のアップデートでさらなる強敵が追加予定。</p>
+						<div class="enemy-grid">
+							<div class="enemy-card">
+								<h5><i class="fa-solid fa-droplet"></i>インクの怨念</h5>
+								<p>歪んだ文字が意志を持ち、形を成した存在。百人一首の呪詛が凝縮されている。</p>
+							</div>
+							<div class="enemy-card">
+								<h5><i class="fa-solid fa-scroll"></i>紙人形の群れ</h5>
+								<p>折り紙が命を宿した無機質な兵士。数の暴力で畳み掛け、倒すほど戦場が乱れていく。</p>
+							</div>
+							<div class="enemy-card">
+								<h5><i class="fa-solid fa-ghost"></i>迷える生霊</h5>
+								<p>恨みを抱えたまま彷徨う魂の残滓。時間をかけるほど力を増す。放置は命取り。</p>
+							</div>
+							<div class="enemy-card">
+								<h5><i class="fa-solid fa-shirt"></i>着物の妖怪</h5>
+								<p>平安の衣が怨念を纏い覚醒した上位存在。姿を変えながら戦う難敵。</p>
+							</div>
+						</div>
+						<span class="update-hint">＋ さらなる怨念が近日実装予定</span>
+
+						<hr />
+
+						<h4>奈落の主</h4>
+						<p>各層の最奥には、太古から封じ込められていた強大な主が待ち構えている。その正体・能力・弱点はすべてあなた自身で確かめよ——ここには記せない。今後のアップデートで、さらなる大妖怪の解放も予定されている。</p>
+
+						<hr />
+
+						<h4>主な機能</h4>
+						<ul>
+							<li>3層×12ノードのあみだくじ式マップ探索</li>
+							<li>出発前のアクセサリガチャ（6枠）とパッシブスキル選択</li>
+							<li>カード49種・レリック12種・アクセサリ10種・パッシブ9種（v1.0.0）</li>
+							<li>ショップノードでデッキの補強・強化・カード削除</li>
+							<li>バトルログとコンボシステムで戦況を完全把握</li>
+							<li>定期アップデートでキャラ・敵・ルートを追加予定</li>
+						</ul>
+
+						<div class="download-box violet-box" style="margin-top:2em;">
+							<h4>Android版をダウンロード</h4>
+							<p>Google Playストアを通さない直接配布版（APK）です。</p>
+							<ul class="actions special" style="justify-content:center; display:flex; margin-top:1.2em;">
+								<li>
+									<a href="https://github.com/showT-pnz/showt-gaming-official-site/releases/download/v1.0.0/violet-v1.0.0.apk" class="button violet-btn large">
+										<i class="fa-solid fa-download" style="margin-right:0.5em;"></i>APKをダウンロード (v1.0.0)
+									</a>
+								</li>
+							</ul>
+							<p style="margin-top:1em;"><small style="color:rgba(204,68,255,0.5);">※インストール時に「不明なアプリ」の警告が出ますが、許可して進めてください。</small></p>
+						</div>
+
+					</div>
+				</section>
+			</article>
+
+			<footer id="footer">
+				<div class="social-footer">
+					<div class="social-buttons">
+						<a href="https://x.com/showT_official" class="social-btn" target="_blank" title="X (Twitter)">
+							<i class="fa-brands fa-x-twitter"></i>
+							<span>X</span>
+						</a>
+						<a href="https://www.instagram.com/showt_original/" class="social-btn" target="_blank" title="Instagram">
+							<i class="fa-brands fa-instagram"></i>
+							<span>Instagram</span>
+						</a>
+						<a href="mailto:yelan.gyoza@gmail.com" class="social-btn" title="Email">
+							<i class="fa-solid fa-envelope"></i>
+							<span>Email</span>
+						</a>
+					</div>
+					<a href="https://ko-fi.com/showt" class="kofi-btn" target="_blank">
+						<i class="fa-solid fa-mug-hot"></i>
+						Support on Ko-fi
+					</a>
+				</div>
+				<ul class="copyright" style="justify-content:center;">
+					<li>&copy; showT GAMING</li>
+				</ul>
+			</footer>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script>
+			(function($) {
+				$(function() {
+					var $window = $(window),
+						$body = $('body');
+					$body.addClass('is-preload');
+					$window.on('load', function() {
+						window.setTimeout(function() {
+							$body.removeClass('is-preload');
+						}, 100);
+					});
+					$('.menuToggle').on('click', function(event) {
+						event.preventDefault();
+						$('#menu').toggleClass('visible');
+					});
+					$('#menu-close').on('click', function() {
+						$('#menu').removeClass('visible');
+					});
+					$('#menu').on('click', 'a', function() {
+						$('#menu').removeClass('visible');
+					});
+					var mode = localStorage.getItem('showt-gaming-device');
+					if (mode) $body.addClass('mode-' + mode);
+				});
+			})(jQuery);
+		</script>
+	</body>
+</html>
