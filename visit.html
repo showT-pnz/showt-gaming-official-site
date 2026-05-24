@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+	<head>
+		<title>VISIT. — showT GAMING</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta name="description" content="VISIT. — 通知だけでゲーム訪問を完結するサイバーHUDアプリ。SYNC、ECHO、CHAIN、SEC、ガチャ、実績を搭載。" />
+		<link rel="icon" type="image/png" href="images/logo.png" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#header {
+				background: rgba(2, 8, 18, 0.97);
+				border-bottom: 1px solid rgba(0, 229, 255, 0.35);
+				box-shadow: 0 2px 30px rgba(0, 229, 255, 0.08);
+			}
+			#main > header {
+				padding-top: 9em;
+				background:
+					radial-gradient(circle at 50% 20%, rgba(255, 42, 253, 0.16), transparent 34%),
+					linear-gradient(180deg, #030714, #07101d 52%, #05050a);
+				border-bottom: 1px solid rgba(0, 229, 255, 0.35);
+			}
+			#main > header h2 {
+				color: #eafbff;
+				text-shadow: 0 0 18px rgba(0, 229, 255, 0.8), 0 0 34px rgba(255, 42, 253, 0.35);
+				animation: visit-glitch 2.6s steps(2, end) infinite;
+			}
+			@keyframes visit-glitch {
+				0%, 88%, 100% { transform: translateX(0); }
+				90% { transform: translateX(2px); }
+				92% { transform: translateX(-2px); }
+				94% { transform: translateX(1px); }
+			}
+			.visit-feature-grid {
+				display: grid;
+				grid-template-columns: repeat(3, minmax(0, 1fr));
+				gap: 1em;
+				margin: 1.5em 0 2em;
+			}
+			.visit-feature {
+				background: rgba(0, 229, 255, 0.035);
+				border: 1px solid rgba(0, 229, 255, 0.18);
+				border-radius: 4px;
+				padding: 1.4em;
+				position: relative;
+				overflow: hidden;
+			}
+			.visit-feature::before {
+				content: '';
+				position: absolute;
+				top: 0; left: 0; right: 0;
+				height: 1px;
+				background: linear-gradient(90deg, transparent, #00e5ff, #ff2afd, transparent);
+			}
+			.visit-feature h5 {
+				color: #00e5ff;
+				font-family: 'Orbitron', sans-serif;
+				font-size: 0.75em;
+				letter-spacing: 0.16em;
+				margin: 0 0 0.7em;
+				text-shadow: 0 0 10px rgba(0, 229, 255, 0.45);
+			}
+			.visit-feature p {
+				color: rgba(192, 216, 255, 0.62);
+				font-size: 0.9em;
+				margin: 0;
+			}
+			.visit-terminal {
+				background:
+					linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+					radial-gradient(circle at 50% 0%, rgba(0,229,255,0.16), transparent 60%),
+					rgba(4, 10, 22, 0.92);
+				background-size: 100% 9px, auto, auto;
+				border: 1px solid rgba(0, 229, 255, 0.28);
+				border-radius: 8px;
+				box-shadow: 0 0 36px rgba(0, 229, 255, 0.1), inset 0 0 36px rgba(255, 42, 253, 0.05);
+				padding: 2em;
+				margin: 2em 0;
+			}
+			.visit-terminal strong { color: #fff; }
+			.download-box.visit-box {
+				background: rgba(0, 229, 255, 0.04);
+				border-color: rgba(0, 229, 255, 0.28);
+			}
+			.download-box.visit-box::before {
+				background: linear-gradient(90deg, transparent, #00e5ff, #ff2afd, transparent);
+			}
+			@media screen and (max-width: 736px) {
+				.visit-feature-grid { grid-template-columns: 1fr; }
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+			<header id="header">
+				<div class="header-left">
+					<h1>
+						<a href="index.html" class="header-back">&#8592;</a>
+						<a href="index.html">
+							showT
+							<span class="gaming-tag">GAMING</span>
+						</a>
+					</h1>
+					<a href="https://showt-pnz.github.io/showt-official-site/" class="site-switch to-official" target="_blank">
+						<i class="fa-solid fa-gem"></i>
+						<span>Official</span>
+					</a>
+				</div>
+				<nav id="nav">
+					<ul>
+						<li class="special">
+							<a href="#menu" class="menuToggle"><span>Menu</span></a>
+							<div id="menu">
+								<button id="menu-close">&#215;</button>
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="violet.html">VIOLET</a></li>
+									<li><a href="visit.html">VISIT.</a></li>
+									<li><a href="https://ko-fi.com/showt" target="_blank">Support</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<article id="main">
+				<header>
+					<h2>VISIT.</h2>
+					<p>Cyber HUD / Notification Complete / SEC Gacha</p>
+				</header>
+
+				<section class="wrapper style5">
+					<div class="inner">
+						<div class="genre-tags">
+							<span class="genre-tag">Cyberpunk</span>
+							<span class="genre-tag">Android</span>
+							<span class="genre-tag">Notification</span>
+							<span class="genre-tag">Gacha</span>
+						</div>
+
+						<h3>通知バーだけで、毎日のゲーム訪問を完結。</h3>
+						<p>VISIT.は、ログイン・デイリー確認をゲーミング体験に変えるAndroidアプリです。未訪問ゲームを通知し、通知アクションの「訪問完了」だけで記録、SYNC獲得、CHAIN継続、実績判定まで完了します。</p>
+
+						<div class="visit-terminal">
+							<p><strong>VISIT. HUD</strong> / CHAIN x14 / SEC RATE BOOST / SYNC +50</p>
+							<p>通知、ガチャ、SECキャラクター、ECHOショップ、実績、CHAIN保護アイテムをサイバーHUDで統合。</p>
+						</div>
+
+						<div class="visit-feature-grid">
+							<div class="visit-feature">
+								<h5>NOTIFICATION COMPLETE</h5>
+								<p>アプリを開かずに訪問完了。通知は高優先度、継続表示、あとで再通知に対応。</p>
+							</div>
+							<div class="visit-feature">
+								<h5>SEC CHARACTER</h5>
+								<p>最高レアSECがホーム、通知文、UIテーマ、演出、ボイスを変化させる特別システム。</p>
+							</div>
+							<div class="visit-feature">
+								<h5>GACHA OVERDRIVE</h5>
+								<p>グリッチ、ノイズ、ネオンライン、パーティクル、SSR/SEC専用演出を搭載。</p>
+							</div>
+							<div class="visit-feature">
+								<h5>CHAIN SYSTEM</h5>
+								<p>連続訪問でSEC排出率アップ。保護アイテムは週1配布、途切れ日数ぶんだけ消費。</p>
+							</div>
+							<div class="visit-feature">
+								<h5>ECHO SHOP</h5>
+								<p>重複ガチャでECHO獲得。通知テーマ、限定UI、SEC背景、ガチャ演出を交換。</p>
+							</div>
+							<div class="visit-feature">
+								<h5>ACHIEVEMENTS</h5>
+								<p>100件超の実績を搭載。SYNC、称号、限定テーマを報酬として獲得。</p>
+							</div>
+						</div>
+
+						<div class="download-box visit-box">
+							<h4>Android版 APK</h4>
+							<p>最新版のVISIT. APKをダウンロードできます。</p>
+							<ul class="actions special" style="justify-content:center; display:flex; margin-top:1.2em;">
+								<li>
+									<a class="button visit-btn large" href="downloads/visit-debug.apk" download>
+										<i class="fa-solid fa-download" style="margin-right:0.5em;"></i>VISIT. APK ダウンロード
+									</a>
+								</li>
+							</ul>
+							<p style="margin-top:1em;"><small style="color:rgba(0,229,255,0.55);">※APK形式。Androidの設定で提供元不明アプリのインストール許可が必要な場合があります。</small></p>
+						</div>
+					</div>
+				</section>
+			</article>
+
+			<footer id="footer">
+				<div class="social-footer">
+					<div class="social-buttons">
+						<a href="https://x.com/showT_official" class="social-btn" target="_blank" title="X (Twitter)">
+							<i class="fa-brands fa-x-twitter"></i>
+							<span>X</span>
+						</a>
+						<a href="https://www.instagram.com/showt_original/" class="social-btn" target="_blank" title="Instagram">
+							<i class="fa-brands fa-instagram"></i>
+							<span>Instagram</span>
+						</a>
+						<a href="mailto:yelan.gyoza@gmail.com" class="social-btn" title="Email">
+							<i class="fa-solid fa-envelope"></i>
+							<span>Email</span>
+						</a>
+					</div>
+					<a href="https://ko-fi.com/showt" class="kofi-btn" target="_blank">
+						<i class="fa-solid fa-mug-hot"></i>
+						Support on Ko-fi
+					</a>
+				</div>
+				<ul class="copyright" style="justify-content:center;">
+					<li>&copy; showT GAMING</li>
+				</ul>
+			</footer>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script>
+			(function($) {
+				$(function() {
+					var $window = $(window),
+						$body = $('body');
+					$body.addClass('is-preload');
+					$window.on('load', function() {
+						window.setTimeout(function() {
+							$body.removeClass('is-preload');
+						}, 100);
+					});
+					$('.menuToggle').on('click', function(event) {
+						event.preventDefault();
+						$('#menu').toggleClass('visible');
+					});
+					$('#menu-close').on('click', function() {
+						$('#menu').removeClass('visible');
+					});
+					$('#menu').on('click', 'a', function() {
+						$('#menu').removeClass('visible');
+					});
+					var mode = localStorage.getItem('showt-gaming-device');
+					if (mode) $body.addClass('mode-' + mode);
+				});
+			})(jQuery);
+		</script>
+	</body>
+</html>
